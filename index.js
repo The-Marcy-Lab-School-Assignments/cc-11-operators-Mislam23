@@ -37,10 +37,10 @@ function areAllFourSame(para1, para2, para3, para4){
 
 //5
 function areAllFourSameOrEqual(para1, para2, para3, para4){
-  if (para1 == (para2 && para3 && para4)) {
-    return "same"
-  } else if (para1 === (para2 && para3 && para4)) {
+  if (para1 === (para2 && para3 && para4)) {
     return "equal"
+  } else if (para1 == (para2 && para3 && para4)) {
+    return "same"
   } else {
     return null;
   }
@@ -53,4 +53,4 @@ function areAllFourSameOrEqual(para1, para2, para3, para4){
 //console.log(areBothEqual("2", 2));
 //console.log(areAllFourEqual("2", "2", "2", 2));
 //console.log(areAllFourSame(true, true, 1, "1"));
-console.log(areAllFourSameOrEqual(true, false, 1, "1"));
+console.log(areAllFourSameOrEqual(true, true, 1, "1"));
