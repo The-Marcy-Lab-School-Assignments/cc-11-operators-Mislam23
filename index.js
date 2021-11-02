@@ -17,19 +17,33 @@ function areBothEqual(para1, para2){
 }
 
 //3
-function areAllFourEqual(){
-  
+function areAllFourEqual(para1, para2, para3, para4){
+  if (para1 === (para2 && para3 && para4)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 
 //4
-function areAllFourSame(){
-  
+function areAllFourSame(para1, para2, para3, para4){
+  if (para1 == (para2 && para3 && para4)) {
+    return true;
+  } else {
+    return false;
+  } 
 }
 
 //5
-function areAllFourSameOrEqual(){
-  
+function areAllFourSameOrEqual(para1, para2, para3, para4){
+  if (para1 == (para2 && para3 && para4)) {
+    return "same"
+  } else if (para1 === (para2 && para3 && para4)) {
+    return "equal"
+  } else {
+    return null;
+  }
 }
 
 
@@ -37,3 +51,6 @@ function areAllFourSameOrEqual(){
 
 //console.log(areBothSame("5", 1));
 //console.log(areBothEqual("2", 2));
+//console.log(areAllFourEqual("2", "2", "2", 2));
+//console.log(areAllFourSame(true, true, 1, "1"));
+console.log(areAllFourSameOrEqual(true, false, 1, "1"));
